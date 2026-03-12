@@ -35,6 +35,7 @@
 /
 ├── README.md                           # Main entry point
 ├── GETTING_STARTED.md                  # Quick setup guide
+├── TECHNICAL_ARCHITECTURE.md           # 🆕 Deep dive: MCP integration, AI-to-AI flows
 │
 └── docs/
     ├── README.md                       # Documentation hub
@@ -81,9 +82,14 @@
 ### 🏗️ Technical Documentation
 
 **System Design:**
-1. [docs/architecture/ARCHITECTURE.md](architecture/ARCHITECTURE.md) - Complete architecture
-2. [docs/architecture/DYNAMIC_SPECIALTIES.md](architecture/DYNAMIC_SPECIALTIES.md) - Specialty system
-3. [docs/SYSTEM_FLOW.md](SYSTEM_FLOW.md) - Flow diagrams
+1. [TECHNICAL_ARCHITECTURE.md](../TECHNICAL_ARCHITECTURE.md) - 🎯 **Advanced: MCP integration, AI-to-AI communication, data flows**
+2. [docs/architecture/ARCHITECTURE.md](architecture/ARCHITECTURE.md) - Complete architecture
+3. [docs/architecture/DYNAMIC_SPECIALTIES.md](architecture/DYNAMIC_SPECIALTIES.md) - Specialty system
+4. [docs/SYSTEM_FLOW.md](SYSTEM_FLOW.md) - Flow diagrams
+
+**Market & Competition:**
+1. [docs/COMPETITIVE_ANALYSIS_AIPAYGEN.md](COMPETITIVE_ANALYSIS_AIPAYGEN.md) - 🎯 **Deep dive: vs AiPayGen competitor**
+2. [docs/STRATEGIC_IMPROVEMENTS.md](STRATEGIC_IMPROVEMENTS.md) - 🎯 **Actionable roadmap: learnings from both competitors**
 
 **Development:**
 1. [docs/development/TESTING.md](development/TESTING.md) - Testing guide

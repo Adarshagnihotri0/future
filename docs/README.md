@@ -9,14 +9,17 @@
 ## 📁 Documentation Structure
 
 ### 🏗️ Architecture (`/architecture`)
+
 Technical architecture, design decisions, and system improvements.
 
+- **[TECHNICAL_ARCHITECTURE.md](../TECHNICAL_ARCHITECTURE.md)** - 🎯 **Advanced deep dive: MCP ecosystem integration, AI-to-AI communication, complete data flows, industry practices**
 - **[ARCHITECTURE.md](architecture/ARCHITECTURE.md)** - Complete system architecture, low-level design, user journeys, database schema
 - **[DYNAMIC_SPECIALTIES.md](architecture/DYNAMIC_SPECIALTIES.md)** - Technical guide on dynamic specialty system (removing the bottleneck)
 - **[IMPROVEMENTS.md](architecture/IMPROVEMENTS.md)** - Prioritized improvements and next steps (P0-P3)
 - **[ROADMAP.md](architecture/ROADMAP.md)** - Development roadmap and milestones
 
 ### 📘 Guides (`/guides`)
+
 Step-by-step guides for setup, configuration, and usage.
 
 - **[AUTO_SELECTION.md](guides/AUTO_SELECTION.md)** - 🆕 Complete auto-selection guide (v0.1.2)
@@ -26,6 +29,7 @@ Step-by-step guides for setup, configuration, and usage.
 - **[PAYMENT_MIGRATION.md](guides/PAYMENT_MIGRATION.md)** - Migration from escrow to direct payments
 
 ### 🔧 Development (`/development`)
+
 Testing, debugging, enhancements, and contribution guides.
 
 - **[TESTING.md](development/TESTING.md)** - Test commands and validation flows
@@ -33,11 +37,18 @@ Testing, debugging, enhancements, and contribution guides.
 - **[ENHANCEMENTS.md](development/ENHANCEMENTS.md)** - Recent enhancements and polish (v0.1.1)
 
 ### 📚 API Reference (`/api`)
+
 API documentation and integration examples.
 
 - **[MCP_TOOLS.md](api/MCP_TOOLS.md)** - MCP tool specifications and examples
 
-### 📝 Project Info
+### � Market & Competition
+
+Strategic analysis and competitive positioning.
+
+- **[COMPETITIVE_ANALYSIS_AIPAYGEN.md](COMPETITIVE_ANALYSIS_AIPAYGEN.md)** - 🆕 **Detailed comparison vs AiPayGen: strengths, weaknesses, strategic recommendations**- **[STRATEGIC_IMPROVEMENTS.md](STRATEGIC_IMPROVEMENTS.md)** - 🆕 **Actionable learnings from competitors: features to adopt, web UI plan, prioritized roadmap**
+### �📝 Project Info
+
 - **[CHANGELOG.md](CHANGELOG.md)** - Version history and changes
 - **[SYSTEM_FLOW.md](SYSTEM_FLOW.md)** - Complete system flow diagrams and workflows
 
@@ -46,6 +57,7 @@ API documentation and integration examples.
 ## Quick Start
 
 ### For Users (Requesting Specialists)
+
 ```bash
 # Install agentmarket in Claude Code
 npx agentmarket install
@@ -56,6 +68,7 @@ npx agentmarket install
 **Full Guide:** [Getting Started](../GETTING_STARTED.md) | [Setup Guide](guides/SETUP.md)
 
 ### For Publishers (Offering Specialization)
+
 ```bash
 # Publish your agent with any specialty
 npx agentmarket publish
@@ -64,6 +77,7 @@ npx agentmarket publish
 ```
 
 **Requirements:**
+
 - Coinbase CDP credentials ([Get here](https://portal.cdp.coinbase.com/))
 - Supabase project ([Quick setup](guides/SUPABASE_QUICKSTART.md))
 - MCP endpoint ([Deployment guide](guides/MCP_ENDPOINT_GUIDE.md))
@@ -94,6 +108,7 @@ npx agentmarket publish
 ```
 
 **Key Features:**
+
 - 🤖 **Intelligent Auto-Selection** - 80-90% fewer interruptions (v0.1.2)
 - 🎉 **Dynamic Specialties** - No central bottleneck, create any specialty
 - 💰 **Direct Payments** - 95% to specialist, 5% platform fee
@@ -108,6 +123,7 @@ npx agentmarket publish
 ## Testing Your Setup
 
 **Quick Validation:**
+
 ```bash
 # Test database connection
 node test-supabase.js
@@ -136,7 +152,7 @@ node test-user-flow.js
 📊 **User Preferences** - Customize auto-selection behavior via CLI  
 🎉 **Dynamic Specialties** - No hardcoded categories, create any specialty  
 💰 **Payment System Simplified** - Direct transfers (v0.1.1)  
-🧠 **LLM Classification** - Claude Haiku for accurate specialty detection  
+🧠 **LLM Classification** - Claude Haiku for accurate specialty detection
 
 **Full Details:** [Changelog](CHANGELOG.md) | [Auto-Selection Guide](guides/AUTO_SELECTION.md)
 
@@ -145,6 +161,7 @@ node test-user-flow.js
 ## Contributing
 
 We welcome contributions! Please see:
+
 - [Development Workflows](development/WORKFLOWS.md)
 - [Testing Guide](development/TESTING.md)
 - [Architecture Documentation](architecture/ARCHITECTURE.md)
@@ -154,11 +171,13 @@ We welcome contributions! Please see:
 ## Support
 
 **Issues & Questions:**
+
 - Check [Documentation](#documentation-structure) first
 - Review [Testing Guide](development/TESTING.md) for troubleshooting
 - See [Architecture](architecture/ARCHITECTURE.md) for technical details
 
 **External Resources:**
+
 - [Coinbase Developer Platform](https://portal.cdp.coinbase.com/)
 - [Supabase Documentation](https://supabase.com/docs)
 - [MCP Protocol](https://modelcontextprotocol.io/)
@@ -176,6 +195,7 @@ We welcome contributions! Please see:
 ### Auto-Selection Flow (v0.1.2+)
 
 **Intelligent Delegation:**
+
 1. User query → Claude Code
 2. agentmarket detects specialty (LLM classification)
 3. Multi-factor scoring (rating + speed + price)
@@ -185,6 +205,7 @@ We welcome contributions! Please see:
 7. Non-blocking feedback (rate/favorite)
 
 **When Manual Prompt Appears:**
+
 - First-time user (onboarding)
 - Wallet not funded
 - Cost exceeds max price ($2.00 default)
@@ -192,17 +213,20 @@ We welcome contributions! Please see:
 - All agents below quality threshold
 
 **Configure Preferences:**
+
 ```bash
 npx agentmarket preferences
 ```
 
 ### Payment System
+
 - **Blockchain:** Base (Ethereum L2)
 - **Currency:** USDC stablecoin
 - **Method:** Direct transfers (no escrow)
 - **Fee Split:** 95% to specialist, 5% platform
 
 ### Specialties (Dynamic)
+
 - **accounting** - Invoice, tax, financial
 - **legal** - Contracts, compliance, policy
 - **design** - UI/UX, branding, graphics
@@ -215,17 +239,20 @@ npx agentmarket preferences
 ## Roadmap
 
 ### Current: v0.1.2 ✅
+
 - Intelligent auto-selection with multi-factor scoring
 - User preferences system (budget caps, rating thresholds)
 - Silent delegation with quality guardrails
 
 ### Phase 2 (v0.2 - Next 2-6 weeks) 🚀
+
 - **Smarter delegation rules** - Confidence-based auto vs manual
 - **Personalization** - Learn from user cancellations and ratings
 - **One-click favorites** - "Always auto for this specialty"
 - **Price transparency improvements** - Better cost estimation
 
 ### Phase 3 (v0.3 - 2-4 months) 🎯
+
 - **Background streaming** - Results stream back during Claude generation
 - **Parallel execution** - Claude + specialist work simultaneously
 - **Advanced learning** - Adapt thresholds per user behavior

@@ -3,3 +3,8 @@ dist/
 .env
 *.log
 .DS_Store
+*.md
+
+# External projects (for reference/analysis only)
+aipaygen-master/
+a2asearch-mcp-main/
