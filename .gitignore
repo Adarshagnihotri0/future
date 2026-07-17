@@ -8,3 +8,14 @@ dist/
 # External projects (for reference/analysis only)
 aipaygen-master/
 a2asearch-mcp-main/
+
+# Security - Never commit sensitive files
+*.key
+*.pem
+*_key.json
+credentials.*
+# Security - Never commit sensitive files
+*.key
+*.pem
+*_key.json
+credentials.*
